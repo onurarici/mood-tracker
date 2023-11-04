@@ -1,29 +1,24 @@
 import React, { useState } from "react";
-
-
-
-
+import { useDispatch } from "react-redux";
+import { welcomeActions } from "../store/welcome-slice";
 
 export default function Welcome(){
-
-    const [isSubmitted,setIsSubmitted] = useState(false);
-
-    function submit(){
-        setIsSubmitted = true
-    };
-
+    const dispatch = useDispatch();
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        dispatch(welcomeActions.logIn());
+    }
     return(
         <div className = "welcome">
-            <div className = 'message-box'>
+            <form onSubmit={handleSubmit}>
             <h1>Welcome To Mood Tracker App</h1><br/><br/>
             <h2>Definition of the app</h2>
             <h2>about two lines</h2>
-            <input placeholder="Your name"></input><br/>
-            <button className="btn btn-primary" onClick={submit} type="submit">Next</button>
-           
+            <button className="btn btn-primary" type="submit">Next</button>
+            </form>
             
 
-            </div>
+            
         </div>
     )
 }
