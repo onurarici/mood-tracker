@@ -1,16 +1,10 @@
-
+/* 
 
 .welcome{
-  /* width:600px; */
-  /* height: 450px; */
+
   background-color: coral ;
   border-radius: 10%;
   position: absolute;
-  /* left:25%; */
-  /* top: 25%;  */
-  
-
-
     top: 50%;
     left: 50%;
     margin-top: -225px;
@@ -23,4 +17,47 @@
   height: 200px;
   width: 200px;
   background-color: aqua;
+} */
+
+.box{
+  height: 30px;
+  width: 30px;
+  border: 1px darkgray solid;
 }
+
+.box:hover {
+  border: 3px gray solid;
+}
+
+.calender{
+  margin-left: 20px;
+  display: inline-block;
+  height: auto;
+  width: auto;  
+}
+
+.monthsBar{
+  left: 30px;
+  position: relative;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+  border: 0;
+}
+
+.months:hover{
+  border: 0;
+}
+
+
+.row{
+  margin-left: 30px;
+  position:relative;
+  top:-25px;
+} 
+
+.dayColumn{
+  display: block;
+  height: 30px;
+}
+
