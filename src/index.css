@@ -1,3 +1,7 @@
+body{
+  position: relative;
+}
+
 /* 
 
 .welcome{
@@ -20,8 +24,8 @@
 } */
 
 .box{
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   border: 1px darkgray solid;
 }
 
@@ -33,19 +37,22 @@
   margin-left: 20px;
   display: inline-block;
   height: auto;
-  width: auto;  
+  width: auto;
+  position: absolute;
+  border: pink 2px solid;
 }
 
 .monthsBar{
   left: 30px;
   position: relative;
-  font-size: 15px;
+  font-size: 10px;
   display: inline-block;
   text-align: center;
   border: 0;
+  /* padding-bottom: 30px; */
 }
 
-.months:hover{
+.monthsBar:hover{
   border: 0;
 }
 
@@ -53,11 +60,59 @@
 .row{
   margin-left: 30px;
   position:relative;
-  top:-25px;
+  top:-17.5px;
+  /* border: green 1px solid; */
 } 
 
 .dayColumn{
   display: block;
+  height: 20px;
+  font-size: 10px;
+  top: 10px;
+  position: relative;
+  /* border: red 1px solid; */
+}
+
+.subject{
+  height: 620px;
+  width: 240px;
+  border: blue 1px solid;
+  position: relative;
+  bottom:612.5px;
+  left: 300px;  
+}
+
+.mood-name{
+  border:0;
+  text-align: center;
+  position: absolute;
+  top:40px;
+  left:10%;
   height: 30px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.mood-name:focus{
+  outline: none;
+}
+
+.moods{
+  position: relative;
+  margin-left:40%;
+  margin-top: 110px;
+}
+
+.mood-sign{
+  margin-top: 25px;
+}
+
+.color-box{
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.color-box.box:hover{
+  border: 1px darkgray solid;;
 }
 

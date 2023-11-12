@@ -1,5 +1,7 @@
 import React from "react";
 import Row from "./Row";
+import Subject from "./Subject";
+
 
 let dayRow = [];
 
@@ -21,6 +23,7 @@ export default function Calender(){
         <div className="calender">
         {months.map(val=>React.createElement("div",{className:"box monthsBar"},val))}
         {dayRow.map(val=>React.createElement("div",{className:"dayColumn"},val[0],val[1]))}
+        <Subject/>
          </div>
     )
 }
